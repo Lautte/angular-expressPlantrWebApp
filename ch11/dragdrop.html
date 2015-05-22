@@ -1,0 +1,58 @@
+<!doctype <!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>HTML 5 Draggable and Droppable Directives</title>
+	<style>
+		dropit, img, p{vertical-align: top; text-align: center;
+			width: 100px;
+			display: inline-block;}
+			p{
+				color: white; background-color: black;
+				font: bold 14px/16px arial;
+				margin: 0px; width: 96px;
+				border: 2px ridge grey;
+				background: linear-gradient(#888888, #000000); 
+			}
+			span{display: inline-block; width: 100px;
+				font: 16px/18px Georgia, serif; text-align: center;
+				padding: 2px;
+				background: linear-gradient(#FFFFFF, #888888);}
+				.dragItem {color: red;
+					opacity: .5;}
+					.dropItem { border: 3px solid red;
+						opacity: .5;}
+						#dragItems {width: 400px}
+	</style>
+</head>
+<body>
+    <h2> HTML drag and drop components  </h2>
+    <div ng-controller="myController">
+    Drag Status: {{dragStatus}} <br>
+    Drop Status: {{dropStatus}}
+    <hr>
+    
+       <div id="dragItems">
+       <span dragit> <img src="/images/asparagus.jpg" /> </span>
+       <span dragit> <img src="/images/carrots.jpg" /> </span>
+       <span dragit> <img src="/images/potato.jpg" /> </span>
+    </div>
+
+    <hr>
+    <dropit>plop it here!</dropit>
+    <dropit> or here!</dropit>
+    <dropit>or here!</dropit>
+    <dropit>or here!</dropit>
+    <dropit>or here!</dropit>
+      <hr>
+    <dropit>plop it here!</dropit>
+    <dropit> or here!</dropit>
+    <dropit>or here!</dropit>
+    <dropit>or here!</dropit>
+    <dropit>or here!</dropit>
+    </div>
+
+    <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
+    <script src="js/dragdrop.js"></script>
+
+</body>
+</html>>
