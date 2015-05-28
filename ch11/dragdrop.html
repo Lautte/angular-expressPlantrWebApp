@@ -10,7 +10,7 @@
 				color: white; background-color: black;
 				font: bold 14px/16px arial;
 				margin: 0px; width: 96px;
-				border: 2px ridge grey;
+				border: 5px ridge green;
 				background: linear-gradient(#888888, #000000); 
 			}
 			span{display: inline-block; width: 100px;
@@ -21,7 +21,7 @@
 					opacity: .5;}
 					.dropItem { border: 3px solid red;
 						opacity: .5;}
-						#dragItems {width: 400px}
+						
 	</style>
 </head>
 <body>
@@ -31,11 +31,13 @@
     Drop Status: {{dropStatus}}
     <hr>
     
-       <div id="dragItems">
-       <span dragit> <img src="/images/asparagus.jpg" /> </span>
-       <span dragit> <img src="/images/carrots.jpg" /> </span>
-       <span dragit> <img src="/images/potato.jpg" /> </span>
-    </div>
+      <div class="Vegetables"> 
+      <span ng-repeat="vegetable in Vegetables">
+            <span dragit><img ng-src="{{vegetable.image}}"/></span>
+            
+          </span>
+       </div>
+
 
     <hr>
     <dropit>plop it here!</dropit>
@@ -55,4 +57,4 @@
     <script src="js/dragdrop.js"></script>
 
 </body>
-</html>>
+</html>

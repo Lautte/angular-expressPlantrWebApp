@@ -1,0 +1,20 @@
+[
+    {
+        "veggie" : "asparagus",
+        "enemy" : ["onion","garlic","potato","BARFFFFF"],
+        "imageUrl": "images/asparagus.jpg"
+    }, 
+    {
+        "veggie" : "potato",
+        "enemy" : ["carrot","cucumber","pumpkin",
+        "raspberry", "squash","sunflower","tomato"],
+        "imageUrl": "images/potato.jpg"
+    }, 
+    {
+        "veggie" : "carrot",
+        "enemy" : ["dill","parsnip","radish"],
+        "imageUrl": "images/carrots.jpg"
+    }
+    
+        
+]

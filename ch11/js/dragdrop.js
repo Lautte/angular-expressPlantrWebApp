@@ -4,25 +4,28 @@ app.controller('myController', function($scope){
 	$scope.dragStatus = 'none';
 	$scope.dropStatus = 'none';
 	$scope.dropValue = "";
-})
-
-var vegetables=[
+	$scope.Vegetables = [{'name':"asparagus","enemy" : ["onion","garlic","potato","BARFFFFF"],"image":'/images/asparagus.jpg'},
+					{'name':"potato","enemy" : ["carrot","cucumber","pumpkin","raspberry", "squash","sunflower","tomato"],
+					"image":'/images/potato.jpg'},
+					{'name':"carrot", "enemy" : ["dill","parsnip","radish"],"image":'/images/carrots.jpg'}]
+	/*{
     "asparagus": {
         "enemy" : ["onion","garlic","potato","BARFFFFF"],
-        "imageUrl": "images/asparagus.jpg"
+        "image": "images/asparagus.jpg"
     }, 
     "potato": {
         "enemy" : ["carrot","cucumber","pumpkin",
         "raspberry", "squash","sunflower","tomato"],
-        "imageUrl": "images/potato.jpg"
+        "image": "images/potato.jpg"
     }, 
     "carrot": {
         "enemy" : ["dill","parsnip","radish"],
-        "imageUrl": "image/carrots.jpg"
+        "image": "images/carrots.jpg"
     }
-    
-        
-];
+  };*/
+
+})
+ 
 
 .directive('dragit', function($document, $window){
 		function makeDraggable(scope, element, attr){
@@ -83,4 +86,19 @@ var vegetables=[
 	};
 });
 
-
+var vegetables={
+    "asparagus": {
+        "enemy" : ["onion","garlic","potato","BARFFFFF"],
+        "imageUrl": "images/asparagus.jpg"
+    }, 
+    "potato": {
+        "enemy" : ["carrot","cucumber","pumpkin",
+        "raspberry", "squash","sunflower","tomato"],
+        "imageUrl": "images/potato.jpg"
+    }, 
+    "carrot": {
+        "enemy" : ["dill","parsnip","radish"],
+        "imageUrl": "image/carrots.jpg"
+    }
+    
+       }; 
